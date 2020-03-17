@@ -10,9 +10,7 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class CodestatebackendApplication {
 
-    //final static String serverUrl1 = "https://gist.githubusercontent.com/PhantomGrin/a1e8ad30915ecd9d2659400d496d1ed6/raw/8b0dbb93521f5d6889502305335104218454c2bf/states_hash.json";
     final static String serverUrl1 = "https://raw.githubusercontent.com/jp-chl/codestatebackend/master/jsons/states_hash.json#";
-    //final static String serverUrl2 = "https://gist.githubusercontent.com/PhantomGrin/a1e8ad30915ecd9d2659400d496d1ed6/raw/8b0dbb93521f5d6889502305335104218454c2bf/states_titlecase.json";
     final static String serverUrl2 = "https://raw.githubusercontent.com/jp-chl/codestatebackend/master/jsons/states_titlecase.json#";
 
     public static void main(String[] args) {
@@ -41,7 +39,7 @@ public class CodestatebackendApplication {
 
     @GetMapping("/")
     public static String hello() {
-        return "HELLO IM DATA READER";
+        return "HELLO I'M DATA READER";
     } // end static String hello()
 
     @GetMapping("/readDataForCode")
